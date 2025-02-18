@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --black: #0F141c;
+    --font:white;
+    --pink:#FF759C;
+    --green:#00cc97
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+body{
+    background-image: url(./images/bg.png);
+    background-color: var(--black);
+    background-position: center center;
+    background-size: contain;
+    justify-content: center;
+    color: var(--font);
+    position: relative;
+    z-index: 1;
+}
+
+body:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0f141ce4;
+    z-index: -1;
+}
+
+html{
+    font-family:system-ui, -apple-system;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*  بيرجع الاسكرول بشكل اسموز */
+}
+
+*, *:before, *:after {box-sizing: inherit;}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+button:hover, a:hover {
+    cursor: pointer; /* بنغير شكل الماوس */
+}
+
+/* ================== */
+

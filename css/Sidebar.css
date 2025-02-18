@@ -1,0 +1,142 @@
+.container{
+    justify-content: center;
+    width: 70vw;
+    height: 100vh;
+    
+    & .side_bar{
+        width: 30%;
+        background-color: #171B22;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+    
+}
+
+.portfolio_img img{
+    width: 100%;
+}
+
+.portfolio_det h2{
+    font-size: 1.2 rem;
+    font-weight: 600;
+
+    & span{
+        font-weight: 400;
+    }
+} 
+
+.typed_text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .text{
+        text-align: center;
+    }
+}
+
+.social_icon{
+    gap: 20px ;
+    justify-content: center;
+    margin: 10px 0;
+
+    & .icon{
+        font-size: 1.5 rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: 0.3s ease;
+        color: var(--font);
+
+    }
+
+    & .icon:hover{
+        background-color: var(--pink);
+    }
+}
+
+.side_menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 0;
+
+
+    & li{
+        color: var(--font);
+        width: 100%;
+        border-top: 1px solid rgba(131 , 131 , 131 , 0.5);
+        border-bottom: 1px solid rgba(131 , 131 , 131 , 0.5);
+        /* margin: 10px 0; */
+        justify-content: flex-start;
+        padding: 10px 5%;
+        
+        & a{
+            margin-left: 10px;
+            color: var(--font);
+            transition: 0.3 ease;
+            font-size: 0.9rem;
+        }
+
+        & i{
+            margin-right: 10px;
+            transition: 0.3 ease;
+        }
+        
+        & a:hover{
+            color: var(--green);
+        }
+    }
+}
+
+.download_btn{
+    width: 300px;
+    height: 60px;
+    background-color: var(--black);
+    border-radius: 50px;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+
+    & i{
+        font-size: 0.9rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        justify-content: center;
+        background-color: var(--pink);
+        color: var(--font);
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        transition: 0.6 ease;
+        cursor: pointer;
+    }
+
+    & a{
+        color: var(--font);
+        font-size: 1.3rem;
+        padding-left: 20%;
+        letter-spacing: 0.1 rem;
+        font-weight: bold;
+        transition: 0.6 ease;
+    }
+
+    & a:hover{
+        filter: drop-shadow(5px 5px 20px var(--font));
+        letter-spacing: 0.15rem;
+    }
+
+    & i:hover{
+        filter: drop-shadow(1px 1px 20px var(--green));
+    }
+}
