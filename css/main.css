@@ -2,4 +2,217 @@ main{
     width: 80%;
     height: 100vh;
     background-color: var(--black);
+    color: var(--font)
+}
+
+
+.hero{
+    width: 100%;
+    justify-content: space-between;
+    padding: 10% 2%;
+
+
+    /******* Content *********/
+    & .content{
+        width: 40%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        
+        & h1{
+            font-size: 5rem;
+            line-height: 5rem;
+            font-weight: 300;
+            font-weight: bold;
+
+            & span{
+                font-weight: 400;
+            }
+        }
+
+        & .hero_text{
+            font-size: 1.5rem;
+            color: var(--pink);
+        }
+
+        
+        & p{
+            color:var(--gray) ;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+    }
+    
+
+    /******* Hero btns *********/
+    & .hero_btns{
+        gap: 20px;
+
+        & button{
+            width: 170px;
+            height: 50px;
+            justify-content: center;
+            border-radius: 50px;
+            background-color: var(--green);
+            color: var(--black);
+            border: none;
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        & button:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 0%;
+            background-color: var(--pink);
+            z-index: -1;
+            transition: .6s;
+        }
+        
+        & button:hover:after{
+            height: 100%;
+        }
+
+        & .btn2{
+            background-color: var(--yellow);
+        }
+    }
+
+
+    /******* Hero imgs *********/
+    & .hero_img{
+        width: 55%;
+        position: relative;
+
+        & .rotate_elem1{
+            position: absolute;
+            top: -10%;
+            left: -13%;
+            width: 100px;
+            height: 100px;
+            animation: rotate 3s infinite forwards linear;
+        }
+
+        & .rotate_elem2{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 50px;
+            height: 50px;
+            animation: rotate 3s infinite forwards linear;
+        }
+    }
+    
+
+    /******* user *********/
+    & .user_info{
+        justify-content: space-between;
+        gap: 20px;
+
+        & p{
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+    & .user_det{
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        width: 330px;
+        background-color: var(--lightBlack);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 2% 1%;
+        border-radius: 10px;
+        
+        & .user_imgs{
+            gap: 1px;
+        }
+
+        & .user_img{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            overflow: hidden;
+            filter: grayscale(100); /* لونها الرمادي */
+            transition: 0.3 ease;
+        }
+
+        & .user_img:hover{
+            filter: grayscale(0); /* ترجع ملونة */
+            cursor: pointer;
+        }
+
+        & h3{
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+
+.hero_text {
+    animation: hero_text-animation 1s steps(5, start) infinite;
+}
+
+@keyframes hero_text-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg); /* بتلف */
+    }
+}
+
+
+.head_text{
+    color: var(--font);
+    font-size: 400;
+    padding-left: 2%;
+}
+
+.slider{
+    height: 50px;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    transform: translateY(30px);
+
+    & .slide_track{
+        width: calc(250px * 40);
+        animation: scroll 40s forwards infinite;
+        position: relative;
+
+        & .slide{
+            width: 150px;
+            height: 60px;
+            padding: 15px;
+            margin: 0 30px;
+        }
+    }
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(calc(-150px * 20));
+    }
 }

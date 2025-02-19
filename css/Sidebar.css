@@ -22,6 +22,7 @@
 .portfolio_det h2{
     font-size: 1.2 rem;
     font-weight: 600;
+    color: var(--font);
 
     & span{
         font-weight: 400;
@@ -36,7 +37,26 @@
 
     & .text{
         text-align: center;
+        color: var(--font);
     }
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--font); }
+}
+
+.text {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    width: 0;
+    animation: typing 3s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
 }
 
 .social_icon{
@@ -137,6 +157,6 @@
     }
 
     & i:hover{
-        filter: drop-shadow(1px 1px 20px var(--green));
+        filter: drop-shadow(1px 1px 20px var(--pink));
     }
 }
