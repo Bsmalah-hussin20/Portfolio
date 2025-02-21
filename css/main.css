@@ -1,16 +1,48 @@
 main{
     width: 80%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--black);
-    color: var(--font)
+    color: var(--font);
+    overflow-y: scroll;
 }
 
+main::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+
+main::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+}
+
+.headings{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    
+    & h1{
+        font-size: 3rem;
+        color: var(--font);
+    }
+}
+
+.headings:after{
+    content:'';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray);
+}
 
 .hero{
     width: 100%;
     justify-content: space-between;
     padding: 10% 2%;
-
 
     /******* Content *********/
     & .content{
@@ -51,7 +83,7 @@ main{
         gap: 20px;
 
         & button{
-            width: 170px;
+            width: 150px;
             height: 50px;
             justify-content: center;
             border-radius: 50px;
@@ -61,26 +93,24 @@ main{
             font-size: 1.2rem;
             position: relative;
             z-index: 1;
-            overflow: hidden;
-        }
-
-        & button:after{
-            content: '';
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 0%;
-            background-color: var(--pink);
-            z-index: -1;
-            transition: .6s;
-        }
-        
-        & button:hover:after{
-            height: 100%;
         }
 
         & .btn2{
-            background-color: var(--yellow);
+            background-color: var(--pink);
+        }
+
+        & .btn1:hover{
+            background-color: var(--black);
+            border: 1px solid var(--green);
+            filter: drop-shadow(1px 1px 20px var(--green));
+            color: var(--green);
+        }
+
+        & .btn2:hover{
+            background-color: var(--black);
+            border: 1px solid var(--pink);
+            filter: drop-shadow(1px 1px 20px var(--pink));
+            color: var(--pink);
         }
     }
 
@@ -123,8 +153,8 @@ main{
 
     & .user_det{
         position: absolute;
-        top: 60%;
-        left: 60%;
+        top: 80%;
+        left: 10%;
         width: 330px;
         background-color: var(--lightBlack);
         display: flex;
@@ -183,6 +213,7 @@ main{
     color: var(--font);
     font-size: 400;
     padding-left: 2%;
+    margin-left: 30px;
 }
 
 .slider{
@@ -216,3 +247,151 @@ main{
         transform: translateX(calc(-150px * 20));
     }
 }
+
+
+/* About section  */
+
+.about{
+        flex-direction: column;
+
+        & p{
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: var(--gray);
+            letter-spacing: 0.07rem;
+
+            & .myname{
+                color: var(--font);
+            }
+
+            & span{
+                color: var(--yellow);
+            }
+        }
+
+        & .about_info{
+            width: 100%;
+            color:var(--font);
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 50px;
+            margin-top: 50px;
+            
+            & .info{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                & h2 span{
+                    color: var(--gray);
+                    font-weight: 300;
+                    font-size: 1.3rem;
+                }
+            }
+
+            & .info_det{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                & h2{
+                    font-weight: 100;
+                    font-size: 1.5rem;
+    
+                    & span{
+                        margin: 0 10px;
+                        color: var(--gray);
+                    }
+                }
+            }
+        }
+}
+
+/* Education & Experience  */
+
+/* Education section  */
+.education_experience{
+    width: 100%;
+    gap: 30px;
+    color: var(--font);
+
+    & .education_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+        margin-top: 40px;
+
+        & .eduction_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        position: relative;
+        padding-left: 5%;
+            
+        & h2{
+            font-size: 1,5rem;
+            font-weight: 200;
+            transition: .3s;
+        }
+
+        & h3{
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: var(--gray);
+            transition: .3s;
+        }
+
+        & p{
+            color: var(--gray);
+            font-size: 1rem;
+            font-weight: 300;
+            transition: .3s;
+        }
+        }
+
+        & .eduction_card:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1.5px;
+            height: 100%;
+            background-color: var(--font);
+        }
+
+        & .eduction_card:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -3%;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: var(--pink);
+            z-index: 1;
+            border: 2px solid var(--font);
+        }
+
+        & .eduction_card:hover h2{
+            color: var(--pink);
+        }
+
+        & .eduction_card:hover h3{
+            color: var(--font);
+        }
+
+        & .eduction_card:hover p{
+            color: var(--font);
+        }
+    }
+
+
+    
+}
+
+

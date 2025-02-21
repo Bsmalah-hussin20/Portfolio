@@ -21,6 +21,7 @@
 }
 
 body{
+    /* height: 100vh; */
     background-image: url(./images/bg.png);
     background-color: var(--black);
     background-position: center center;
@@ -28,15 +29,22 @@ body{
     justify-content: center;
     position: relative;
     z-index: 1;
+    color: var(--font);
 }
 
 body:after{
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: #0f141ce4;
+    width: 100%;
+    height: 100vh;
     z-index: -1;
+}
+
+section{
+    justify-content: center;
+    width: 100%;
+    padding: 5% 8%;
 }
 
 img{
@@ -56,6 +64,7 @@ html{
     display: flex;
     align-items: center;
 }
+
 
 button:hover, a:hover {
     cursor: pointer; /* بنغير شكل الماوس */
