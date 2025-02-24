@@ -5,8 +5,17 @@
     --lightBlack:rgba(41, 41, 41, 0.823);
     --font:white;
     --pink:#FF759C;
+    --darkpink:rgb(141, 87, 129);
+    --darkgreen:rgba(2, 175, 132, 0.2);
     --green:#00cc97;
+    --mainpurple:rgb(163, 81, 226);
     --yellow:rgb(247, 247, 110);
+    --darkyellow:rgb(196, 196, 90);
+    --purple:plum;
+    --darkpurple:rgb(95, 66, 95);
+    --blue:rgb(40, 144, 249);
+    --darkblue:rgb(12, 79, 145);
+    --red:red
     --border:rgba(131 , 131 , 131 , 0.5);
     --gray:gray;
 }
@@ -63,8 +72,14 @@ html{
 .flex{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
+.flex_start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 button:hover, a:hover {
     cursor: pointer; /* بنغير شكل الماوس */
