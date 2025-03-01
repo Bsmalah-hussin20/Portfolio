@@ -19,6 +19,7 @@
     --red:red
     --border:rgba(131 , 131 , 131 , 0.5);
     --gray:gray;
+    --opacityGray:rgba(128, 128, 128, 0.356);
 }
 
 *{
