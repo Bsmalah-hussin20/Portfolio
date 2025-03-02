@@ -9,7 +9,7 @@
     --darkpink:rgb(141, 87, 129);
     --darkgreen:rgba(2, 175, 132, 0.2);
     --green:#00cc97;
-    --mainpurple:rgb(163, 81, 226);
+    --mainPurple:rgb(163, 81, 226);
     --yellow:rgb(247, 247, 110);
     --darkyellow:rgb(196, 196, 90);
     --purple:plum;
@@ -29,6 +29,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 
 body{
@@ -74,7 +75,7 @@ html{
 .flex{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .flex_start{

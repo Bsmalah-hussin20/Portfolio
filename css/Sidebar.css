@@ -107,7 +107,7 @@
         }
         
         & a:hover{
-            color: var(--mainpurple);
+            color: var(--mainPurple);
         }
     }
 }
@@ -156,3 +156,10 @@
         filter: drop-shadow(1px 1px 20px var(--pink));
     }
 }
+
+.bars{
+    display: none;
+}
+
+/* MQ section */
+

@@ -1,0 +1,215 @@
+@media(width > 1200px){
+    .content{
+        width: 40%;
+    }
+
+    .skills_container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .design_skills_container{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .portfolio_cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog_img{
+        width: 70%;
+    }
+}
+
+
+@media (max-width:1200px){
+    .side_bar{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 30%;
+        z-index: 999;
+        opacity: 0;
+        transition: .6s;
+    }
+
+    .bars{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        border: 1px solid var(--black);
+        width: 50px;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .show_side_bar{
+        opacity: 1;
+        left: 0;
+    }
+
+    .container{
+        width: 100vw;
+    }
+}
+
+
+@media (max-width:1000px){
+    .hero{
+        flex-direction: column-reverse;
+    }
+    
+    .content{
+        align-items: center;
+        width: 100%;
+        left: 0;
+    }
+
+
+    .user_det{
+        display: none;
+    }
+
+    .hero_img{
+        width: 80%;
+    }
+
+    .eduction_card{
+        padding-left: 10%;
+    }
+
+    .design_skills_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media (max-width:768px){
+    .side_bar{
+        width: 40%;
+    }
+
+    .download_btn{
+        & i{
+            margin-left: 10px;
+        }
+    }
+
+    .eduction_card{
+        margin-left: 10%;
+
+        & h2{
+            margin-left: 5%;
+        }
+    }
+
+    .eduction_card:before{
+        left: -4%;
+    }
+
+    .skills_info{
+        & h1{
+            font-size: 1rem;
+        }
+    }
+
+    .portfolio_cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* .hide_portfolio{
+        & h2{
+
+        }
+    } */
+
+    .blog_box{
+        flex-direction: column;
+
+        & p{
+            margin: 7px 0;
+        }
+    }
+
+    .blog_img{
+        width: 100%;
+    }
+
+    .blog_content{
+        & .btn{
+            top: 8%;
+        }
+    }
+
+    .contact_container{
+        flex-direction: column;
+    }
+
+    .contact_content{
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:500px){
+    .side_bar{
+        width: 65%;
+    }
+
+    .content h1{
+        text-align: center;
+    }
+
+    .info h2{
+        font-size: 1.1rem;
+    }
+
+    .info_det h2{
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+
+    .education_experience{
+        flex-direction: column;
+    }
+
+    .skills_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .design_skills_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .design_skill{
+        justify-content: center;
+
+        & .skills_info{
+            & h1{
+                font-size: 1.2rem;
+            }
+
+            & p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .box_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .portfolio_cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footer p{
+        text-align: center;
+    }
+}

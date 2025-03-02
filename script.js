@@ -13,7 +13,7 @@ var swiper = new Swiper('.serviceSwiper',{
             spaceBetween:30,
         },
         500:{
-            slidesPerView:3,
+            slidesPerView:1,
             spaceBetween:30,
         }
     }
@@ -39,3 +39,10 @@ var swiper = new Swiper('.testimomialSwiper',{
         }
     }
 });
+
+let bar = document.querySelector('.bars');
+let side_bar = document.querySelector('.side_bar');
+
+bar.addEventListener('click',() =>{
+    side_bar.classList.toggle('show_side_bar');
+})

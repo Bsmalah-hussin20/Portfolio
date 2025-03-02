@@ -11,7 +11,7 @@ main::-webkit-scrollbar{
     background-color: transparent;
 }
 main::-webkit-scrollbar-thumb{
-    background-color: var(--mainpurple);
+    background-color: var(--mainPurple);
 }
 
 /* class headings */
@@ -60,7 +60,7 @@ main::-webkit-scrollbar-thumb{
 
     & .default_side{
         background-color: var(--font);
-        border: 5px solid var(--pink);
+        border: 2px solid var(--pink);
         color: var(--pink);
         transform: rotateZ(75px);
     }
@@ -84,7 +84,6 @@ main::-webkit-scrollbar-thumb{
 
     /******* Content *********/
     & .content{
-        width: 40%; 
         flex-direction: column;
         gap: 20px;
         
@@ -122,7 +121,7 @@ main::-webkit-scrollbar-thumb{
             height: 50px;
             justify-content: center;
             border-radius: 50px;
-            background-color: var(--mainpurple);
+            background-color: var(--mainPurple);
             color: var(--black);
             border: none;
             font-size: 1.2rem;
@@ -136,9 +135,9 @@ main::-webkit-scrollbar-thumb{
 
         & .btn1:hover{
             background-color: var(--black);
-            border: 1px solid var(--mainpurple);
-            filter: drop-shadow(1px 1px 20px var(--mainpurple));
-            color: var(--mainpurple);
+            border: 1px solid var(--mainPurple);
+            filter: drop-shadow(1px 1px 20px var(--mainPurple));
+            color: var(--mainPurple);
         }
 
         & .btn2:hover{
@@ -258,6 +257,7 @@ main::-webkit-scrollbar-thumb{
         width: calc(250px * 40);
         animation: scroll 40s forwards infinite;
         position: relative;
+        justify-content: center;
 
         & .slide{
             width: 150px;
@@ -309,14 +309,18 @@ main::-webkit-scrollbar-thumb{
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                
+                & h2{
+                    /* font-size: 1.5rem; */
+                }
 
                 & h2 span{
                     color: var(--gray);
                     font-weight: 300;
-                    font-size: 1.3rem;
+                    /* font-size: 1.5rem; */
                 }
             }
-
+ 
             & .info_det{
                 display: flex;
                 flex-direction: column;
@@ -324,7 +328,7 @@ main::-webkit-scrollbar-thumb{
 
                 & h2{
                     font-weight: 100;
-                    font-size: 1.5rem;
+                    /* font-size: 1.5rem; */
     
                     & span{
                         margin: 0 10px;
@@ -419,7 +423,6 @@ main::-webkit-scrollbar-thumb{
     & .skills_container{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
         place-content: center;
         place-items: center;
         gap: 20px;
@@ -458,7 +461,7 @@ main::-webkit-scrollbar-thumb{
     & .design_skills_container{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+
         gap: 10px;
         margin-top: 20px;
     }
@@ -512,7 +515,6 @@ main::-webkit-scrollbar-thumb{
 
     & .box_container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         padding: 35px 15px;
         width: 100%;
@@ -564,7 +566,7 @@ main::-webkit-scrollbar-thumb{
                         & h2{
                             font-size: 1.2rem;
                             font-weight: 500;
-                            color: var(--mainpurple);
+                            color: var(--mainPurple);
                         }
                     }
                 }
@@ -737,7 +739,6 @@ main::-webkit-scrollbar-thumb{
     & .portfolio_cards{
         margin-top: 20px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         
         & .portfolio_img{
@@ -784,9 +785,7 @@ main::-webkit-scrollbar-thumb{
     }
     
     & .btn{
-        left: 42%;
         top: 15px;
-
     }
 }
 
@@ -847,16 +846,15 @@ main::-webkit-scrollbar-thumb{
             & .blog_img{
                 border-radius: 10px;
                 position: relative;
-                width: 70%;
                 overflow: hidden;
 
                 & .blog_date{
                     position: absolute;
-                    top: 0;
-                    right: 0;
+                    top: 2%;
+                    right: 2%;
                     width: 60px;
                     height: 70px;
-                    border-radius: 5px ;
+                    border-radius: 10px ;
                     background-color: var(--font);
                     color: var(--black);
                     flex-direction: column;
@@ -893,7 +891,7 @@ main::-webkit-scrollbar-thumb{
 
                 & .btn{
                     height: 40px;
-                    margin-top: 5px;
+                    margin-top: 7px;
                 }
             }
         }
@@ -905,3 +903,126 @@ main::-webkit-scrollbar-thumb{
     }
 }
 
+/* contact section */
+.contact{
+    flex-direction: column;
+
+    & .contact_head{
+        & h2{
+            font-weight: 300;
+        }
+    }
+
+    & .contact_container{
+        width: 100%;
+        gap: 20px;
+        margin-top: 20px;
+
+        & .contact_content{
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-between;
+            gap: 10px;
+
+            & .contact_box{
+                width: 100%;
+                gap: 20px;
+                justify-content: flex-start;
+                background-color: var(--lightBlack);
+                padding: 5px;
+                border-radius: 10px;
+
+                & i{
+                    font-size: 3rem;
+                    width: 80px;
+                    height: 80px;
+                    background-color: var(--mainPurple);
+                    border-radius: 10px;
+                    color: var(--font);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            & .box_info{
+                & p{
+                    color: var(--gray);
+                }
+
+                & h2{
+                    font-weight: 300;
+                    font-size: 1rem;
+                }
+            }
+
+            & .inputs{
+                width: 100%;
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 20px;
+
+                & input{
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                    color: var(--font);
+                    background-color: transparent;
+                    padding-left: 2%;
+                    font-size: 1.3rem;
+                    border-bottom: 2px solid var(--mainPurple);
+                }
+            }
+
+            & .inputs input::placeholder{
+                color: var(--font) !important;
+            }
+
+            & .inputs input:active,
+            .inputs input:focus{
+                border-bottom: 2px solid var(--pink);
+            }
+        }
+    }
+
+    & .submit_btn{
+        width: 100%;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 30px;
+        
+        & button{
+            width: 150px;
+            height: 50px;
+            justify-content: center;
+            border-radius: 50px;
+            background-color: var(--mainPurple);
+            color: var(--font);
+            font-size: 1.1rem;
+        }
+
+        & button:hover{
+            background-color: var(--black);
+            border: 1px solid var(--mainPurple);
+            filter: drop-shadow(1px 1px 20px var(--mainPurple));
+            color: var(--mainPurple);
+        }
+    }
+}
+
+/* copyright */
+.footer{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+    & p{
+        color: var(--gray);
+    }
+
+    & span{
+        color: var(--mainPurple);
+        margin: 0 5px;
+    }
+}

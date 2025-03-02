@@ -15,13 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <!-- main style -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/MQ.css">
 </head>
 <body class="flex">
     
     <div class="container flex">
-
         <div class="side_bar flex">
-
             <div class="portfolio_img">
                 <img src="./images/bsmalah.png" alt="" style="width: 230px;">
             </div>
@@ -39,25 +38,25 @@
 
             <ul class="side_menu flex_start">
 
-                    <li> <a href="#">
+                    <li> <a href="#home">
                         <i class="fa-solid fa-house"></i>
                         Home</a></li>
-                    <li> <a href="#">
+                    <li> <a href="#about">
                         <i class="fa-regular fa-user"></i>
                         About</a></li>
-                    <li> <a href="#">
+                    <li> <a href="#resume">
                         <i class="fa-regular fa-id-card"></i>
                         resume</a></li>
-                    <li> <a href="#">
+                    <li> <a href="#services">
                         <i class="fa-solid fa-headphones"></i>
                         Services</a></li>
-                    <li> <a href="#">
+                    <li> <a href="#portfolio">
                         <i class="fa-solid fa-briefcase"></i>
                         Portfolio</a></li>
-                    <li> <a href="#">
+                    <li> <a href="#blog">
                         <i class="fa-solid fa-chart-column"></i>
                         Blog</a></li>
-                    <li> <a href="#">
+                    <li> <a href="#contact">
                         <i class="fa-solid fa-at"></i>
                         Contact</a></li>
             
@@ -68,9 +67,12 @@
                 <a href="#">Download cv</a>
             </div>
         </div>
+        <div class="bars flex">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
         <main>
-            <div class="hero flex">
+            <div class="hero flex" id="home">
                 <div class="content flex_start">
                     <h1>bsmalah <span> hussin </span></h1>
                     <span class="hero_text">-- Developer --</span>
@@ -82,10 +84,10 @@
                     </div>
                 </div>
                 <div class="hero_img">
-                    <img src="images/ME.png" alt="" srcset="">
+                    <img src="images/ME.png" alt="" srcset="" class="me">
                     <img src="images/rotate-img.png" alt="" class="rotate_elem1">
                     <img src="images/rotate-img2.png" alt="" class="rotate_elem2">
-                    <div class="user_det">
+                    <!-- <div class="user_det">
                         <h3>Worked with more than 100 people</h3>
                         <div class="user_info flex">
                             <div class="user_imgs flex">
@@ -104,7 +106,7 @@
                             </div>
                             <p>100+ Client</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -150,8 +152,6 @@
                     <div class="info">
                         <h2><span>Name</span></h2>
                         <h2><span>Nationality</span></h2>
-                        <h2><span>Phone</span></h2>
-                        <h2><span>E-mail</span></h2>
                         <h2><span>Experience</span></h2>
                         <h2><span>Freelance</span></h2>
                         <h2><span>Skype</span></h2>
@@ -160,8 +160,6 @@
                     <div class="info_det">
                         <h2><span>:</span> Bsmalah Hussin</h2>
                         <h2><span>:</span> Egypt</h2>
-                        <h2><span>:</span> (+20) 122 861 6852</h2>
-                        <h2><span>:</span> bsmalahhussin@gmail.com</h2>
                         <h2><span>:</span> 2+ years</h2>
                         <h2><span>:</span> Available</h2>
                         <h2><span>:</span> hello.bsmalah</h2>
@@ -260,7 +258,7 @@
                 
             </section>
 
-            <section class="design_skills">
+            <section class="design_skills" id="resume">
                 <div class="headings">
                     <h1>Design Skills.</h1>
                 </div>
@@ -294,7 +292,7 @@
                         </div>
                         <div class="skills_info">
                             <h1>88%</h1>
-                            <p>PHOTOSHOP</p>
+                            <p>Photoshop</p>
                         </div>
                     </div>
 
@@ -384,7 +382,7 @@
                 </div>
             </section>
 
-            <section class="services">
+            <section class="services" id="services">
                 <div class="headings">
                     <h1>Services</h1>
                 </div>
@@ -462,7 +460,7 @@
                 </div>
             </section>
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="headings">
                     <h1>Portfolio</h1>
                 </div>
@@ -632,7 +630,7 @@
                 </div>
             </section>
 
-            <section class="blogs">
+            <section class="blogs" id="blog">
                 <div class="headings">
                     <h1>Blogs.</h1>
                 </div>
@@ -688,7 +686,7 @@
                         <div class="blog_img">
                             <img src="images/blog3.png" alt="" srcset="">
                             <div class="blog_date flex">
-                                <h2>20 APR</h2>
+                                <h2>10 APR</h2>
                             </div>
                         </div>
                         <div class="blog_content">
@@ -706,6 +704,51 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="headings">
+                    <h1>Get In Touch</h1>
+                </div>
+                <div class="contact_head">
+                    <h2>Take A Coffee & Chat With Me.</h2>
+                </div>
+                <div class="contact_container flex">
+                    <div class="contact_content flex_start" >
+                        <div class="contact_box flex">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="box_info">
+                                <p>Email</p>
+                                <h2>bsmalahhussin@gmail.com</h2>
+                            </div>
+                        </div>
+                        <div class="inputs flex_start">
+                            <input type="text" placeholder="Your Email">
+                            <input type="text" placeholder="Your Massege">
+                        </div>
+                    </div>
+
+                    <div class="contact_content flex_start">
+                        <div class="contact_box flex">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="box_info">
+                                <p>Phone</p>
+                                <h2>+20 0122 8616 852</h2>
+                            </div>
+                        </div>
+                        <div class="inputs flex_start">
+                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Your Subject">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_btn flex_start">
+                    <button>Submit Now</button>
+                </div>
+            </section>
+
+            <section class="footer flex">
+                <p>@ 2025 | Made by <span>bsmalah hussin</span></p>
             </section>
 
         </main>
