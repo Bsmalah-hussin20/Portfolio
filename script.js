@@ -36,6 +36,10 @@ var swiper = new Swiper('.testimomialSwiper',{
         500:{
             slidesPerView:1,
             spaceBetween:10,
+        },
+        300:{
+            slidesPerView:1,
+            spaceBetween:10,
         }
     }
 });
