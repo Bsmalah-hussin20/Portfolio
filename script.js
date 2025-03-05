@@ -9,10 +9,14 @@ var swiper = new Swiper('.serviceSwiper',{
             spaceBetween:30,
         },
         900:{
-            slidesPerView:2,
+            slidesPerView:1,
             spaceBetween:30,
         },
         500:{
+            slidesPerView:1,
+            spaceBetween:30,
+        },
+        300:{
             slidesPerView:1,
             spaceBetween:30,
         }
