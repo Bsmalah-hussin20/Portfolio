@@ -22,7 +22,7 @@
     .blog_img{
         width: 70%;
     }
-}
+} 
 
 
 @media (max-width:1200px){
@@ -56,20 +56,36 @@
     .container{
         width: 100vw;
     }
-}
 
+    .skills_container{
+        grid-template-columns: repeat(4,1fr);
+    }
 
-@media (max-width:1000px){
+    .design_skills_container{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .portfolio_cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+};
+
+@media (max-width:992px){
+    .side_bar{
+        width: 35%;
+    }
+
     .hero{
         flex-direction: column-reverse;
     }
-    
-    .content{
-        align-items: center;
-        width: 100%;
-        left: 0;
-    }
 
+    .content{
+        width: 100%;
+    }
 
     .user_det{
         display: none;
@@ -79,95 +95,73 @@
         width: 80%;
     }
 
-    .eduction_card{
+    .education_card{
         padding-left: 10%;
     }
 
     .design_skills_container{
         grid-template-columns: repeat(3,1fr);
     }
-}
 
+    .blog_box{
+        flex-direction: column;
+    }
+
+    .contact_container{
+        flex-direction: column;
+    }
+}
 
 @media (max-width:768px){
     .side_bar{
-        width: 40%;
+        width: 48%;
     }
 
-    .download_btn{
-        & i{
-            margin-left: 10px;
-        }
+    .hero{
+        flex-direction: column-reverse;
     }
 
-    .eduction_card{
-        margin-left: 10%;
-
-        & h2{
-            margin-left: 5%;
-        }
+    .content{
+        width: 100%;
     }
 
-    .eduction_card:before{
-        left: -4%;
+    .user_det{
+        display: none;
     }
 
-    .skills_info{
-        & h1{
-            font-size: 1rem;
-        }
+    .hero_img{
+        width: 80%;
+    }
+
+
+    .content h1{
+        font-size: 5rem;
     }
 
     .portfolio_cards{
         grid-template-columns: repeat(2,1fr);
     }
 
-    /* .hide_portfolio{
-        & h2{
-
-        }
-    } */
-
     .blog_box{
         flex-direction: column;
-
-        & p{
-            margin: 7px 0;
-        }
     }
 
     .blog_img{
         width: 100%;
     }
 
-    .blog_content{
-        & .btn{
-            top: 8%;
-        }
-    }
-
     .contact_container{
         flex-direction: column;
     }
-
-    .contact_content{
-        width: 100%;
-    }
-
 }
 
-
-@media (max-width:500px){
+@media (max-width:576px){
     .side_bar{
         width: 65%;
     }
 
-    .content h1{
-        text-align: center;
-    }
-
     .info h2{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .info_det h2{
@@ -186,19 +180,9 @@
     .design_skills_container{
         grid-template-columns: repeat(1,1fr);
     }
-    
-    .design_skill{
-        justify-content: center;
 
-        & .skills_info{
-            & h1{
-                font-size: 1.2rem;
-            }
-
-            & p{
-                font-size: 0.9rem;
-            }
-        }
+    .skills_info{
+        text-align: center;
     }
 
     .box_container{
@@ -207,9 +191,5 @@
 
     .portfolio_cards{
         grid-template-columns: repeat(1,1fr);
-    }
-
-    .footer p{
-        text-align: center;
     }
 }
