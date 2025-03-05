@@ -216,6 +216,11 @@
 }
 
 @media (max-width:576px){
+    main{
+        width: 100%;
+        align-items: center;
+    }
+
     .side_bar{
         width: 65%;
     }
