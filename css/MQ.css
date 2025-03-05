@@ -1,4 +1,8 @@
 @media(width > 1200px){
+    main{
+        width: 80%;
+    }
+
     .side_bar{
         width: 30%;
     }
@@ -30,6 +34,10 @@
 
 
 @media (max-width:1200px){
+    main{
+        width: 80%;
+    }
+
     .side_bar{
         width: 30%;
         position: absolute;
@@ -79,6 +87,10 @@
 };
 
 @media (max-width:992px){
+    main{
+        width: 80%;
+    }
+
     .side_bar{
         width: 35%;
     }
@@ -117,6 +129,10 @@
 }
 
 @media (max-width:768px){
+    .main{
+        width: 80%;
+    }
+
     .side_bar{
         width: 48%;
     }
@@ -195,5 +211,12 @@
 
     .portfolio_cards{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width:375px){
+    main{
+        width: 100%;
+        align-items: center;
     }
 }
